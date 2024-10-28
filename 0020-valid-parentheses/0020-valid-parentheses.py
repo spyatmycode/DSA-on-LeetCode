@@ -21,7 +21,7 @@ class Solution:
             elif len(stackOne) > 0 and bracket in stackMap.values() and bracket == stackMap[stackOne[-1]]:
                 stackOne.pop()
 
-            print(bracket,stackOne, result)
+            # print(bracket,stackOne, result)
 
             else:
                 return False
