@@ -2,11 +2,7 @@ class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
 
 
-        p = 0
-        k = 0
-
         right = 0
-
 
         while right + 1 < len(nums):
 
