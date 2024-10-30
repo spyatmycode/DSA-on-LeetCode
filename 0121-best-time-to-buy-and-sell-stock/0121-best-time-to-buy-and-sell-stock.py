@@ -3,15 +3,27 @@ class Solution:
 
         profit = 0
 
-        for i in range(len(prices)):
+        buy = prices[0]
 
-            pointer = i + 1
+        for sell in prices[1:]:
 
-            while pointer < len(prices):
+            if sell > buy:
+                profit = max(profit, sell - buy)
+            
+            else:
+            
+                buy = sell
+        
 
-                profit = max(profit, prices[pointer] - prices[i])
+        return profit
 
-                pointer += 1
+
+
+        
+
+            
+
+            
         
 
         return profit
