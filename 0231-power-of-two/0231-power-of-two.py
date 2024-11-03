@@ -5,7 +5,7 @@ class Solution:
         def solution(n):
             #The base case
             if n == 1:
-                #This is 
+                #This is definitely a power of two 2^0
                 return True
             #The number is definitely not a power of two
             if n < 1:
